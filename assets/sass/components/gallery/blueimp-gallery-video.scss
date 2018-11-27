@@ -1,0 +1,93 @@
+/*
+ * blueimp Gallery Video Factory CSS
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * https://opensource.org/licenses/MIT
+ */
+
+.blueimp-gallery > .slides > .slide > {
+  .video-content > {
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      /* Prevent artifacts in Mozilla Firefox: */
+      -moz-backface-visibility: hidden;
+    }
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    iframe {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+  .video-playing > iframe {
+    top: 0;
+  }
+  .video-content > a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: -64px auto 0;
+    width: 128px;
+    height: 128px;
+    background: url(../img/video-play.png) center no-repeat;
+    opacity: 0.8;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .video-playing > {
+    a, img {
+      display: none;
+    }
+  }
+  .video-content > video {
+    display: none;
+  }
+  .video-playing > video {
+    display: block;
+  }
+  .video-loading > a {
+    background: url(../img/loading.gif) center no-repeat;
+    background-size: 64px 64px;
+  }
+}
+
+/* Replace PNGs with SVGs for capable browsers (excluding IE<9) */
+
+body:last-child .blueimp-gallery > .slides > .slide > .video-content:not(.video-loading) > a {
+  background-image: url(../img/video-play.svg);
+}
+
+/* IE7 fixes */
+
+* + html .blueimp-gallery > .slides > .slide > .video-content {
+  height: 100%;
+  > a {
+    left: 50%;
+    margin-left: -64px;
+  }
+}
