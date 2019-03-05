@@ -2807,3 +2807,7 @@ body:last-child .blueimp-gallery-playing > .play-pause {
 @media screen and (min-width: 981px) {
   .mobile-visible {
     display: none; } }
+
+@media screen and (max-width: 980px) {
+  .mobile-hidden {
+    display: none; } }

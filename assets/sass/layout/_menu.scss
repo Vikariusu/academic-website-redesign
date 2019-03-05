@@ -102,3 +102,9 @@
 			display: none;
 		}
 	}
+
+	.mobile-hidden {
+		@include breakpoint('<large') {
+			display: none;
+		}
+	}
