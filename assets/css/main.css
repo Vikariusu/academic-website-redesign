@@ -2375,6 +2375,20 @@ body:last-child .blueimp-gallery-playing > .play-pause {
   * + html .blueimp-gallery > .slides > .slide > .slide-content {
     position: relative; }
 
+.book {
+  display: flex; }
+
+.book-image {
+  flex-basis: 30%; }
+
+.book-image img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.book-info {
+  flex-basis: 70%;
+  margin: 0 24px; }
+
 /* Wrapper */
 #wrapper {
   display: -moz-flex;
@@ -2625,7 +2639,11 @@ body:last-child .blueimp-gallery-playing > .play-pause {
     font-family: "Roboto Slab", serif;
     font-size: 1.3em; }
   #header .icons {
-    text-align: right; }
+    text-align: right;
+    color: #3d4449 !important; }
+  #header .active {
+    font-weight: bolder;
+    color: #3d4449; }
   @media screen and (max-width: 1680px) {
     #header {
       padding-top: 3em; } }
@@ -2750,7 +2768,7 @@ body:last-child .blueimp-gallery-playing > .play-pause {
     font-size: 0.9em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
-      color: #5887A8; }
+      color: pink; }
     #menu ul a.opener, #menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
