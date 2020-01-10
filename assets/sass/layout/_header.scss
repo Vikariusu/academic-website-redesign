@@ -27,6 +27,12 @@
 
 		.icons {
 			text-align: right;
+			color: #3d4449 !important; 
+		}
+
+		.active {
+			font-weight: bolder;
+			color: #3d4449;
 		}
 
 		@include breakpoint('<=xlarge') {
