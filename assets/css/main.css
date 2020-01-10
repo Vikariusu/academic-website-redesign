@@ -2399,7 +2399,8 @@ body:last-child .blueimp-gallery-playing > .play-pause {
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding-bottom: 10vh; }
 
 /* Main */
 #main {
@@ -2768,7 +2769,7 @@ body:last-child .blueimp-gallery-playing > .play-pause {
     font-size: 0.9em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
-      color: pink; }
+      color: #5887A8; }
     #menu ul a.opener, #menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
