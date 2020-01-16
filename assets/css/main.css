@@ -2634,14 +2634,16 @@ body:last-child .blueimp-gallery-playing > .play-pause {
     -ms-flex: 1;
     flex: 1;
     margin-bottom: 0; }
+  #header li a:hover {
+    color: #3d4449 !important;
+    transform: color 200ms ease; }
   #header .logo {
     border-bottom: 0;
     color: inherit;
     font-family: "Roboto Slab", serif;
     font-size: 1.3em; }
   #header .icons {
-    text-align: right;
-    color: #3d4449 !important; }
+    text-align: right; }
   #header .active {
     font-weight: bolder;
     color: #3d4449; }
